@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2048</title>
+    <link rel="stylesheet" type="text/css" href="2048.css">
+
+    <script src="jquery-1.12.4.js" type="text/javascript"></script>
+    <script src="support2048.js" type="text/javascript"></script>
+    <script src="showanimate2048.js"type="text/javascript"></script>
+    <script src="main2048.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <h1>My2048</h1>
+        <a href="javascript:newgame();" id="startBtn">新游戏</a>
+        <p>score:<span id="score">0</span></p>
+    </header>
+    <div id="container">
+        <!--背景格-->
+        <div class="grid-cell" id="grid-cell-00"></div>
+        <div class="grid-cell" id="grid-cell-01"></div>
+        <div class="grid-cell" id="grid-cell-02"></div>
+        <div class="grid-cell" id="grid-cell-03"></div>
+
+        <div class="grid-cell" id="grid-cell-10"></div>
+        <div class="grid-cell" id="grid-cell-11"></div>
+        <div class="grid-cell" id="grid-cell-12"></div>
+        <div class="grid-cell" id="grid-cell-13"></div>
+
+        <div class="grid-cell" id="grid-cell-20"></div>
+        <div class="grid-cell" id="grid-cell-21"></div>
+        <div class="grid-cell" id="grid-cell-22"></div>
+        <div class="grid-cell" id="grid-cell-23"></div>
+
+        <div class="grid-cell" id="grid-cell-30"></div>
+        <div class="grid-cell" id="grid-cell-31"></div>
+        <div class="grid-cell" id="grid-cell-32"></div>
+        <div class="grid-cell" id="grid-cell-33"></div>
+
+        <div class="final">
+            <h1>你最后的得分是：</h1> <h1 class="finalpoint">  </h1>
+            <a href="javascript:newgame();" id="reStart">重新开始</a>
+        </div>
+    </div>
+</body>
+</html>
